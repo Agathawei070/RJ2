@@ -45,7 +45,7 @@ function Cliente(nome, telefoneCelular, email, endereco) {
         ${this.telefoneCelular.descricao()}
         ${this.endereco.descricao()}
         ---------------
-        `;
+        `.trim();
     };
 }
 
@@ -85,7 +85,6 @@ function TelefoneCelular(DDD, telefone) {
         return this.telefone.toString().toLowerCase();
     };
 
-    // Método de descrição
     this.descricao = function() {
         return `
         ---------------
@@ -93,7 +92,7 @@ function TelefoneCelular(DDD, telefone) {
         DDD: ${this.DDD}
         Número: ${this.telefone}
         ---------------
-        `;
+        `.trim();
     };
 }
 
@@ -176,7 +175,7 @@ function Endereco(estado, cidade, bairro, numero) {
         Cidade: ${this.cidade}
         Estado: ${this.estado}
         ---------------
-        `;
+        `.trim();
     };
 }
 
